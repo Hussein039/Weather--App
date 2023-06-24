@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
 def get_weather(city):
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=YOUR_API_HERE"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=7374a84a25c0ae3849072bfe175bc276"
     response = requests.get(url)
     data = response.json()
 
@@ -29,7 +29,7 @@ def get_weather(city):
         messagebox.showerror("Error", f"City '{city}' not found.")
 
 def get_weather_forecast(city):
-    url = f"https://api.openweathermap.org/data/2.5/forecast?q={city}&appid=YOUR_API_HERE"
+    url = f"https://api.openweathermap.org/data/2.5/forecast?q={city}&appid=7374a84a25c0ae3849072bfe175bc276"
     response = requests.get(url)
     data = response.json()
 
