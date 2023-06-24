@@ -5,4 +5,3 @@
 # Need to install matplotlib
 
 <code>pip install matplotlib</code>
-# pip install matplotlib
